@@ -6,7 +6,7 @@
         <q-toolbar>
           <q-toolbar-title>
             <q-avatar>
-              <img src="/images/logo.jpg" alt="logo">
+              <img :src="baseUrl + '/images/logo.jpg'" alt="logo">
             </q-avatar>
             群刊 · {{ magazine.title }}
           </q-toolbar-title>
@@ -16,7 +16,7 @@
       </q-header>
 
       <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
-        <q-img :src="magazine.cover"/>
+        <q-img :src="baseUrl + magazine.cover"/>
 
         <q-banner class="bg-primary text-white">
           <div class="text-h6">
@@ -33,7 +33,7 @@
           <q-item clickable v-ripple v-for="item in magazine.starring">
             <q-item-section avatar>
               <q-avatar>
-                <img :src="item.avatar" alt="avatar">
+                <img :src="baseUrl + item.avatar" alt="avatar">
               </q-avatar>
             </q-item-section>
             <q-item-section class="text-subtitle1">
@@ -58,7 +58,7 @@
                   <q-card-section class="col-5 flex flex-center">
                     <q-img
                         class="rounded-borders"
-                        :src="item.cover"
+                        :src="baseUrl + item.cover"
                     />
                   </q-card-section>
                 </q-card-section>
@@ -105,6 +105,7 @@
 
 <script setup>
 import {onMounted, ref} from 'vue'
+import baseUrl from '@/config/base-url.js'
 import list from '@/data'
 import ChatFrame from '@/components/ChatFrame.vue'
 import StoutstormLogo from "@/components/StoutstormLogo.vue";

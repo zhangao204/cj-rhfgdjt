@@ -5,7 +5,7 @@
         v-for="item in chat"
         :key="item.message"
         :name="item.user"
-        :avatar="item.avatar"
+        :avatar="baseUrl + item.avatar"
         :sent="item.isSent"
     >
 
@@ -13,7 +13,7 @@
         {{ item.message }}
       </div>
       <div v-if="item.image !== ''">
-        <img class="chat-image" :src="item.image" alt="image">
+        <img class="chat-image" :src="baseUrl + item.image" alt="image">
       </div>
     </q-chat-message>
   </div>
@@ -21,6 +21,7 @@
 
 <script setup>
 import {computed} from 'vue'
+import baseUrl from '@/config/base-url.js'
 
 const props = defineProps({
   chat: {
