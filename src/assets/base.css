@@ -1,7 +1,12 @@
+/* logo */
 :root {
-
+    --logo-size: 54px;
+    --logo-color: #dcdcdc;
+    --line-weight: 9px;
+    --border-width: 3px;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {}
+    :root {
+    }
 }
