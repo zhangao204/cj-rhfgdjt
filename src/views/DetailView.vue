@@ -118,18 +118,18 @@ const magazine = ref({})
 
 onMounted(() => {
   switch (props.id) {
-    case 'c202103':
-      import('@/data/c202103').then((data) => {
+    case 'c202301':
+      import('@/data/c202301').then((data) => {
         magazine.value = data.default
       })
       break
-    case 'c202201':
-      import('@/data/c202201').then((data) => {
+    case 'c202302':
+      import('@/data/c202302').then((data) => {
         magazine.value = data.default
       })
       break
     default:
-      import('@/data/c202103').then((data) => {
+      import('@/data/c202301').then((data) => {
         magazine.value = data.default
       })
   }

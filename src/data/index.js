@@ -1,18 +1,18 @@
 const list = [
     {
-        id: 'c202201',
-        title: '2022年第一期',
-        subtitle: '当我们真正热爱这世界时，我们才真正生活在这世上。 —— 泰戈尔',
+        id: 'c202301',
+        title: '2023年第一期',
+        subtitle: '你看不见你自己，你所看见的只是你的影子。—— 泰戈尔《飞鸟集》',
         summary: '',
-        cover: '/images/cover/c202201.png'
+        cover: '/images/cover/c202301.png'
     },
     {
-        id: 'c202103',
-        title: '2021年第三期',
-        subtitle: '"有人出生就在罗马，有人出生就是牛马"',
+        id: 'c202302',
+        title: '2023年第二期',
+        subtitle: '如果你因失去太阳而悲伤，你也将失去星星。—— 泰戈尔',
         summary: '',
-        cover: '/images/cover/c202103.png'
-    }
+        cover: '/images/cover/c202302.png'
+    },
 ]
 
 export default list

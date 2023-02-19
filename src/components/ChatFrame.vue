@@ -60,5 +60,5 @@ const chat = computed(() => {
   margin-bottom: 20px
 
 .chat-image
-  width: 100%
+  max-width: 100%
 </style>
