@@ -6,8 +6,7 @@
         :key="item.message"
         :name="item.user"
         :avatar="baseUrl + item.avatar"
-        :sent="item.isSent"
-    >
+        :sent="item.isSent">
 
       <div v-if="item.message !== ''">
         {{ item.message }}
