@@ -66,7 +66,7 @@
                 <q-separator/>
 
                 <q-card-actions>
-                  <a :href="'/chat-journal/detail/' + item.id">
+                  <a :href="baseUrl + '/detail/' + item.id">
                     <q-btn flat color="primary">
                       阅读
                     </q-btn>
