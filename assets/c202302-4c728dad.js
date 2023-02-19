@@ -1,0 +1,1 @@
+import{l as t}from"./DetailView-e8a9d6f1.js";import{s}from"./starring-264d5d90.js";import"./index-670f0653.js";const i={...t[1],starring:s,chat:[{title:"",author:"",session:[{...s[5],message:"第二期俺还没写捏",image:""}]}]};export{i as default};
